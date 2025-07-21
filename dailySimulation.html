@@ -1,0 +1,59 @@
+<!-- Gustavo Corona -->
+<!-- dailySimulation.html made July 20, 2025 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Daily Schedule Simulation</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 60px; background-color: #eef;">
+    <h1>My Simulated Day</h1>
+    <div id="output" style="margin-top: 40px; font-size: 1.5rem;"></div>
+    <script>
+        const output = document.getElementById("output");
+
+        // Initial message
+        output.textContent = "Let's start the day!";
+
+        // Activities and their delays (in milliseconds)
+        setTimeout(() => {
+            output.textContent = "Wake up 🌞";
+        }, 2000); 
+
+        setTimeout(() => {
+            output.textContent = "Breakfast 🥣";
+        }, 2000 + 3000); 
+
+        setTimeout(() => {
+            output.textContent = "Work 👨‍🍳";
+        }, 5000 + 5000); 
+
+        setTimeout(() => {
+            output.textContent = "Exercise 🏃";
+        }, 10000 + 4000);
+
+        setTimeout(() => {
+            output.textContent = "Watch streaming 📺";
+        }, 14000 + 3000); 
+
+        setTimeout(() => {
+            output.textContent = "Videogames 🕹️";
+        }, 17000 + 3000); 
+
+        setTimeout(() => {
+            output.textContent = "Home work ✍️"; 
+        }, 20000 + 4000); 
+
+        setTimeout(() => {
+            output.textContent = "Sleep 😴";
+        }, 24000 + 5000); 
+
+        setTimeout(() => {
+            output.textContent = "Day complete! 🎉";  // Final Output after day is finnished. 
+        }, 29000 + 2000); 
+
+    </script>
+</body>
+</html>

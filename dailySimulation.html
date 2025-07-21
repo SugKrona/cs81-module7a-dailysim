@@ -1,7 +1,6 @@
 <!-- Gustavo Corona -->
 <!-- dailySimulation.html made July 20, 2025 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +15,23 @@
 
         // Initial message
         output.textContent = "Let's start the day!";
+
+        // Define the original background color 
+        const originalBgColor = '#eef'; 
+
+        // Calculate a random delay for the back pain event
+        const randomBackPainDelay = Math.floor(Math.random() * 29000) + 1000; 
+
+        // Random back pain event
+        setTimeout(() => {
+            output.textContent = "Sudden back pain! 😭";
+            document.body.style.backgroundColor = "red"; // Change background to red
+            // Set a timeout to revert background color after 1.5 seconds
+            setTimeout(() => {
+                document.body.style.backgroundColor = originalBgColor; 
+            }, 1500); // Back pain flash 
+        }, randomBackPainDelay);
+
 
         // Activities and their delays (in milliseconds)
         setTimeout(() => {
@@ -32,7 +48,7 @@
 
         setTimeout(() => {
             output.textContent = "Exercise 🏃";
-        }, 10000 + 4000);
+        }, 10000 + 4000); 
 
         setTimeout(() => {
             output.textContent = "Watch streaming 📺";
@@ -51,7 +67,7 @@
         }, 24000 + 5000); 
 
         setTimeout(() => {
-            output.textContent = "Day complete! 🎉";  // Final Output after day is finnished. 
+            output.textContent = "Day complete! 🎉"; //Final Output after day is finnished. 
         }, 29000 + 2000); 
 
     </script>
